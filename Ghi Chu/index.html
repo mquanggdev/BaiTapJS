@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        1. lệnh git init : khởi tạo repository(kho lưu trữ) cho dự án 
+        2. lệnh git add . : lênh này để thêm một dự án từ vùng working sang vùng staging
+        3. lệnh git status : kiểm tra xem các dự án trong vùng working có đã được đẩy và staging chưa
+        4. lệnh git commit -m "Tên dự án" chuyển các file từ vùng staging sang vùng repository
+        5. lệnh git log : có tác dụng là xem lại lịch sử các commit (mới hiện lên trên , cũ hiện bên dưới )
+        6. lệnh git show commit_id : dùng xem chi tiết nội dung bên trong một commit 
+        7. lệnh git diff : xem sự thay đổi của một file sau khi chỉnh sửa : điều kiện là file đó vẫn đang ở trang working
+        8. lênhj gitk : mở dashboard xem trực quan hơn ( nếu k nhớ mấy câu lệnh bên trên thì dùng gitk thôi là xem được hết thông tin rồi )
+        9: lệnh git checkout -- tên_file : dùng để trở lại trạng thái trước khi thay đổi file(tức nó sẽ xóa những cái thay đổi mà chưa được thêm vào vùng staging) 
+        10: lệnh reset HEAD tên_file hoặc git reset ten_file : chuyển file đó từ vùng staging về working (không nhất thiết phải dùng cái này : bởi vì nếu ta chỉnh sửa file chưa hợp ý thì ta cứ sửa nó ở vùng working rồi đẩy vào lần nữa chứ k cần phải backfile về mà sửa)
+        11: lệnh git reset --soft commit_id : đẩy từ vùng repository về staging
+        12" lệnh git reset --mixed commit_id : đẩy từ cùng repository về thẳng working
+
+
+
+        ---Các Câu Lệnh liên quan đến nhánh ----
+        có 1 nhánh chính tên là master , trong một nhóm thì leader sẽ làm việc với nhánh chính và các thành viên khác thì làm việc với các nhánh và khi leader thấy các nhánh đó ổn thì sẽ merge với nhánh chính để hoàn thành dự án 
+        1 : git branch : xem danh sách các nhánh
+        2 : git checkout -b ten_nhanh : tạo nhánh mới và chuyển sang nhánh đó 
+        3 : git checkout ten_nhanh : chuyển sang nhánh đó
+        4 : git merge ten_nhanh : dùng để hợp nhánh đó với nhánh hiện tại
+        5 : git branch -D ten_nhanh : dùng để xóa đi một nhánh 
+
+        --- Các lệnh github ----
+        1:  git remote add origin https://github.com/mquanggdev/bai_tap_1.git : sau khi tạo kho trên github thì dùng lệnh này để kết nối
+        2: git branch -M main : lệnh này dùng để chuyển tên nhánh chính thành main
+        3:git push -u origin main : đẩy code lên github lần đầu
+        4: git pull origin ten_nhanh : kéo code về máy  
+        5: git clone https//,,,, thì sẽ kéo tất cả code về (trong trường hợp mới vào proj) ;
+    </div>
+    <div>
+        --Học Javascript--
+        
+    </div>
+</body>
+</html>

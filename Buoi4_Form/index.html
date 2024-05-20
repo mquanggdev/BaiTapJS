@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 : CSS </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="Form-1">
+        <h2>Câu 1 : Tạo form đăng ký tài khoản </h2>
+        <div class="container">
+            <form action="#">
+                <div class="input">
+                    <label for="username">Họ Tên:</label>
+                    <br>
+                    <input type="text" placeholder="Ví dụ : lenvana" name="username" id="username">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" placeholder="lenvana@gmail.com" name="email" id="email">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <br>
+                <div class="btn">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Form-2">
+        <h2>Tạo Form Đánh Giá Chi Tiết</h2>
+        <div class="container">
+            <form action="#">
+                <div class="input">
+                    <label for="username">Họ Tên:</label>
+                    <br>
+                    <input type="text"  name="username" id="username">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email"  name="email" id="email">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" name="password" id="password">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="confirm-password">Password:</label>
+                    <br>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
+                <br>
+                <div class="input-select">
+                    <label>Giới Tính</label>
+                    <br>
+                    <input type="radio" name="gioitinh" id="nam">
+                    <label for="nam">Nam</label>
+                    <br>
+                    <input type="radio" name="gioitinh" id="nu">
+                    <label for="nu">Nữ</label>
+                    <br>
+                    <input type="radio" name="gioitinh" id="khac">
+                    <label for="khac">Khác</label>
+                </div>
+                <br>
+                <div class="btn">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Form-3">
+        <h2>Câu 3 : Tạo form Đánh giá sản phẩm </h2>
+        <div class="container">
+            <form action="#">
+                <div class="input">
+                    <label for="namepr">Họ Tên:</label>
+                    <br>
+                    <input type="text"  name="namepr" id="namepr">
+                </div>
+                <br>
+                <div class="input-select">
+                    <label>Đánh Giá</label>
+                    <div class="input-select-item">
+                        <input type="radio" name="danhgia" id="5sao">
+                        <label for="5sao">5 Sao</label>
+                        <br>
+                        <input type="radio" name="danhgia" id="4sao">
+                        <label for="4sao">4 Sao</label>
+                        <br>
+                        <input type="radio" name="danhgia" id="3sao">
+                        <label for="3sao">3 Sao</label>
+                        <br>
+                        <input type="radio" name="danhgia" id="2sao">
+                        <label for="2sao">2 Sao</label>
+                        <br>
+                        <input type="radio" name="danhgia" id="1sao">
+                        <label for="1sao">1 Sao</label>
+                    </div>
+                </div>
+                <div class="input-cmt">
+                    <label for="binhluan">Bình Luận</label>
+                    <br>
+                    <textarea name="binhluan" id="binhluan"></textarea>
+                </div>
+                <br>
+                <div class="btn">
+                    <button type="submit">Gửi đánh giá</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Form-4">
+        <h2>Câu 4 : Tạo form liên hệ </h2>
+        <div class="container">
+            <form action="#">
+                <div class="input">
+                    <label for="username">Họ Tên:</label>
+                    <br>
+                    <input type="text" name="username" id="username">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br>
+                <div class="input-cmt">
+                    <label for="message">Nội dung tin nhắn:</label>
+                    <br>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <br>
+                <div class="btn">
+                    <button type="submit">Gửi tin nhắn</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Form-5">
+        <h2>Câu 5 : Tạo form đặt khách sạn </h2>
+        <div class="container">
+            <form action="#">
+                <div class="input">
+                    <label for="username">Họ Tên:</label>
+                    <br>
+                    <input type="text" name="username" id="username">
+                </div>
+                <br>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <br>
+                <div class="input-datefrom">
+                    <label for="datefrom"> Ngày nhận phòng :</label>
+                    <br>
+                    <input type="date" id="datefrom">
+                </div>
+                <br>
+                <div class="input-dateto">
+                    <label for="dateto"> Ngày trả phòng :</label>
+                    <br>
+                    <input type="date" id="dateto">
+                </div>
+                <br>
+                <div class="input-option">
+                    <label>Loại phòng</label>
+                    <br>
+                    <select name="loaiphong" id="loaiphong">
+                        <option value="phongthuong">Phòng Thường</option>
+                        <option value="phongvip">Phòng Vip</option>
+                    </select>
+                </div>
+                <br>
+                <div class="input-cmt">
+                    <label for="message">Yêu cầu đặc biệt</label>
+                    <br>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <br>
+                <div class="btn">
+                    <button type="submit">Đặt Phòng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="Form-6">
+        <h2>Câu 6 : Tạo form tìm kiếm</h2>
+        <div class="container">
+            <form method="get">
+                <input type="text" placeholder="Nhập từ khóa">
+                <button type="submit">Tìm Kiếm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
