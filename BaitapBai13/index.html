@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background: #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .title {
+            font-size: 40px;
+            text-align: center;
+            font-weight: 600;
+            padding: 20px 0;
+        }
+        .input {
+            padding: 0 20px;
+            position: relative;
+        }
+        .input input {
+            padding: 10px 5px;
+            border: none;
+            border-bottom: 1px solid #333;
+            background: transparent;
+            outline: none;
+            width: 380px;
+        }
+        .input input::placeholder{
+            color: rgba(0, 0, 0, .5);
+        }
+
+        .input button {
+            border-radius: 8px;
+            padding: 5px 8px;
+            width: 50px;
+            margin-left: 20px;
+            position: absolute;
+            top: 9px;
+            border: 1px solid #333;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .input button:hover{
+            background: #333;
+            color: #fff;
+        }
+        .show-input {
+            margin-top: 20px;
+            padding: 0 40px;
+        }
+        .jobs {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .list-jobs li {
+            margin-bottom: 10px;
+        }
+        .deleteButton{
+            border-radius: 8px;
+            padding: 5px 8px;
+            width: 50px;
+            border: 1px solid #333;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .deleteButton:hover {
+            background: #333;
+            color: #fff;
+        }
+    </style>   
+    <div class="container">
+        <div class="title">Todo List</div>
+        <div class="input">
+            <input type="text" placeholder="Thêm công việc...">
+            <button>Thêm</button>
+        </div>
+        <div class="show-input">
+            <ul class="list-jobs">
+                
+            </ul>
+        </div>
+    </div>
+
+<!--   
+      <h1>Todo List</h1>
+  
+        <input type="text" id="taskInput" placeholder="Thêm công việc...">
+        <button id="button">Thêm</button>
+         -->
+     <!-- <ul id="taskList"></ul> -->
+    <script src="script.js"></script>
+</body>
+</html>
